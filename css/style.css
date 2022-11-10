@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.menu-section {
+    background-color: #95a5a6;
+}
+
+.logo h2 {
+    color: #fb5200;
+    margin-top: 20px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    position: relative;
+}
+
+nav ul li a,
+.dropDownIcon {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 21px;
+    display: block;
+    cursor: pointer;
+}
+.fa-solid {
+    font-size: 14px;
+    float: right;
+    text-align: center;
+    margin-top: 8px;
+    transition: all ease .5s;
+    margin-left: 20px;
+}
+.dropDownIcon:hover .fa-solid{
+    transform: rotate(180deg);
+    transition: all ease .5s;
+}
+
+
+nav ul li ul{
+    position: absolute;
+    top: 100%;
+    display: none;
+    background: #fb5200;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li:hover ul{
+    display: block;
+}
